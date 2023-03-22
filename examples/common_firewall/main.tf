@@ -6,6 +6,7 @@
 module "iam_service_account" {
   source = "../../modules/iam_service_account/"
 
+  project_id         = var.project_id
   service_account_id = var.service_account
 }
 
