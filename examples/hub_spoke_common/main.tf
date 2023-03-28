@@ -136,6 +136,7 @@ module "iam_service_account" {
   source = "../../modules/iam_service_account/"
 
   service_account_id = "${local.prefix}vmseries-sa"
+  project_id         = var.project_id
 }
 
 # Create storage bucket to bootstrap VM-Series.
